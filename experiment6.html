@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Headphones - TechStore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px;
+            min-height: 80vh;
+        }
+        .product-image {
+            width: 50%;
+            height: 500px;
+            border: 2px solid #e1e8ee;
+            border-radius: 10px;
+            padding: 10px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-details {
+            width: 50%;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .category {
+            font-size: 14px;
+            color: #358ed7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .product-title {
+            font-size: 42px;
+            font-weight: 300;
+            color: #43484d;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .product-price {
+            font-size: 28px;
+            color: #43474d;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .select-group {
+            margin-bottom: 25px;
+        }
+        .select-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        .select-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e8ee;
+            border-radius: 6px;
+            font-size: 16px;
+            background: white;
+        }
+        .add-to-cart {
+            background: linear-gradient(135deg, #7dc855, #64af3d);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .add-to-cart:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(125, 200, 85, 0.4);
+        }
+        .features {
+            margin-top: 30px;
+        }
+        .features h3 {
+            font-size: 20px;
+            color: #43484d;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1e8ee;
+        }
+        .features ul {
+            list-style: none;
+        }
+        .features li {
+            padding: 8px 0;
+            font-size: 16px;
+            color: #86939e;
+            position: relative;
+            padding-left: 25px;
+        }
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #7dc855;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .product-image, .product-details {
+                width: 100%;
+            }
+            .product-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <!-- Replace with actual image URL -->
+            <img src="https://m.media-amazon.com/images/I/61+faPj4QUL._SX679_.jpg">
+        </div>
+        <div class="product-details">
+            <div class="category">Consumer Electronics </div>
+            <h1 class="product-title">Samsung Galaxy S25</h1>
+            <div class="product-price">₹65,000</div>
+            
+            <div class="select-group">
+                <label>Color:</label>
+                <select>
+                    <option>IcyBlue</option>
+                    <option>Mint</option>
+                    <option>Silver Shadow</option>
+                </select>
+            </div>
+            
+            <div class="select-group">
+                <label>Quantity:</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart">Buy Now</button>
+            
+            <div class="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Brand: Samsung</li>
+                    <li>Operating System: Android 15.0</li>
+                    <li>RAM Memory: 12GB</li>
+                    <li>CPU Model: Snapdragon</li>
+                    <li>CPU Speed: 4.47GHz</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
