@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Cards - Flexbox Experiment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: "Poppins", Arial, sans-serif; 
+            margin: 20px; 
+            background: linear-gradient(135deg, #eef2ff, #f9f9f9); 
+        }
+        h2 { 
+            text-align: center; 
+            margin-bottom: 25px; 
+            font-size: 28px; 
+            color: #333; 
+        }
+        .container { 
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: flex-start; 
+            gap: 25px; 
+            flex-wrap: wrap; 
+            padding: 10px; 
+        }
+        .card { 
+            background: rgb(223, 189, 189); 
+            border-radius: 14px; 
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); 
+            width: 240px; 
+            text-align: center; 
+            padding: 20px 18px; 
+            transition: 0.3s ease; 
+        }
+        .card:hover { 
+            transform: translateY(-6px); 
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18); 
+        }
+        .avatar { 
+            width: 80px; 
+            height: 80px; 
+            background: #49485b; 
+            color: white; 
+            border-radius: 50%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 22px; 
+            margin: 0 auto 14px; 
+            font-weight: bold; 
+            letter-spacing: 1px; 
+        }
+        .name { 
+            font-weight: 600; 
+            font-size: 20px; 
+            margin-bottom: 6px; 
+            color: #222; 
+        }
+        .detail { 
+            font-size: 15px; 
+            color: #72801a; 
+            margin: 4px 0; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Profile Cards</h2>
+    
+    <div class="container">
+        <!-- VK Card -->
+        <div class="card">
+            <div class="avatar">HY</div>
+            <div class="name">Hritik Yadav</div>
+            <div class="detail">B.Tech - CSE</div>
+            <div class="detail">Roll No: 2025499302</div>
+            <div class="detail">1st Year</div>
+        </div>
+
+        <!-- SD Card -->
+        <div class="card">
+            <div class="avatar">HY</div>
+            <div class="name">Himanshu Yadav</div>
+            <div class="detail">B.Tech - CSE</div>
+            <div class="detail">Roll No: 2025439287</div>
+            <div class="detail">1st Year</div>
+        </div>
+
+        <!-- RS Card -->
+        <div class="card">
+            <div class="avatar">HV</div>
+            <div class="name">Harshit Verma</div>
+            <div class="detail">B.Tech - CSE</div>
+            <div class="detail">Roll No: 2025738308</div>
+            <div class="detail">1st Year</div>
+        </div>
+    </div>
+</body>
+</html>
